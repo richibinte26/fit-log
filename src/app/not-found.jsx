@@ -6,7 +6,7 @@ export default function NotFound() {
     <div className="min-h-screen flex flex-col items-center justify-center bg-black text-white text-center px-4">
       <h1 className="text-6xl font-bold mb-4">404</h1>
       <p className="text-lg text-gray-400 mb-6">
-        Oops, this page doesn't exist.
+        Oops, this page does not exist.
       </p>
       <Link
         href="/"
