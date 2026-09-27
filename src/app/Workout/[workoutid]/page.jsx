@@ -6,10 +6,14 @@ import SaveForLaterButton from "../../../Components/workouDetails/SaveForLaterBu
 const getWorkoutData = async (workoutId) => {
   try {
     const res = await fetch(
-      `https://api.abcz.workers.dev/api/fitlog/${workoutId}`
+      `https://api.api-store.workers.dev/api/fitlog/${workoutId}`,
+      {
+        cache: "no-store",
+      }
     );
 
     if (!res.ok) {
+      console.log("API status:", res.status);
       return null;
     }
 
@@ -17,6 +21,7 @@ const getWorkoutData = async (workoutId) => {
 
     return data;
   } catch (error) {
+    console.error("Fetch error:", error);
     return null;
   }
 };
