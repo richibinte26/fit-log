@@ -1,5 +1,5 @@
 "use client";
-import { FitlogContext } from "@/Context/FitlogContext";
+import { FitlogContext } from "../../Context/FitlogContext";
 import { CalendarPlus } from "lucide-react";
 import React, { useContext } from "react";
 import { toast } from "react-toastify";

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 
-const MyPlanLinks = () => {
+const MyPlanLink = () => {
   const pathname = usePathname();
 
   const isActive = pathname === "/my-plan";
@@ -25,4 +25,4 @@ const MyPlanLinks = () => {
   );
 };
 
-export default MyPlanLinks;
+export default MyPlanLink;

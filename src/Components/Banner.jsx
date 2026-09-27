@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import BannerImage from "../../assets/banner.png";
+import bannerimage from "../../assets/banner.png";
 import { ChevronRight } from "lucide-react";
 const Banner = () => {
   return (
@@ -36,7 +36,7 @@ const Banner = () => {
         <div className="w-full md:w-1/2 flex justify-center">
            
           <Image
-            src={BannerImage}
+            src={bannerimage}
             alt="Banner Image"
             className="w-full max-w-md lg:max-w-90 h-auto"
           /> 

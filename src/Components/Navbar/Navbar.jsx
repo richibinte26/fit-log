@@ -5,14 +5,14 @@ import logo from "../../../assets/logo.png";
 import PlanButton from "./PlanButton";
 import SaveButton from "./SaveButton";
 import WorkoutLink from "./WorkoutLink";
-import MyPlanLinks from "./MyPlanLinks";
+import MyPlanLink from "./MyPlanLink";
 import Link from "next/link";
 
 const Navbar = () => {
   const links = (
     <>
       <WorkoutLink />
-      <MyPlanLinks />
+      <MyPlanLink />
     </>
   );
 
@@ -46,7 +46,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          {/* LogoLarge device */}
+          {/* Logo - Large device */}
           <Link href="/">
             <div className="hidden lg:flex items-center">
             <Image src={logo} width={25} height={40} alt="logo" />

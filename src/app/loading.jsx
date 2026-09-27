@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
 
 const GlobalLoading = () => {
-    return (
-        <div className='main-h-screen flex items-center justify-center'>
-            <span className='loading loading-spinner text-warning'>Loading Homepage...</span>
-        </div>
-    );
+  return (
+    <div className="min-h-screen flex items-center justify-center">
+      <span className="loading loading-spinner text-warning"></span>
+      Loading Homepage...
+    </div>
+  );
 };
 
 export default GlobalLoading;
