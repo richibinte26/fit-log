@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import AddToTodaysPlanButton from "../../../Components/workouDetails/AddToTodaysPlanButton";
-import SaveForLaterButton from "../../../Components/workouDetails/SaveForLaterButton";
+import AddToTodaysPlanButton from "../../../Components/WorksOutDetails/AddToTodaysPlanButton";
+import SaveForLaterButton from "../../../Components/WorksOutDetails/SaveForLaterButton";
 
 const getWorkoutData = async (workoutId) => {
   try {
@@ -44,7 +44,7 @@ const WorkoutDetailsPage = async ({ params }) => {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-2 gap-10">
-      {/* Left side — big image */}
+      {/* Left sideBig image */}
       <div className="relative w-full h-72 lg:h-full rounded-xl overflow-hidden">
         <Image
           src={workout.image}
@@ -126,7 +126,6 @@ const WorkoutDetailsPage = async ({ params }) => {
   );
 };
 
-// Small helper component for one row in the specs table
 const SpecRow = ({ label, value }) => (
   <div className="flex justify-between px-4 py-3">
     <span className="text-neutral-400 text-sm uppercase">
