@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 bg-base-100 shadow-sm border-b border-base-200">
       <div className="navbar container mx-auto py-3 px-5">
-        {/* Left - Hamburger / Logo */}
+        {/* Left Hamburger / Logo */}
         <div className="flex-1">
           {/* Hamburger */}
           <div className="dropdown lg:hidden">

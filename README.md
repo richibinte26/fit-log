@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+-Fitlog
 
-## Getting Started
+-Project Description
 
-First, run the development server:
+FitLog is a modern workout library and fitness tracking web application. It allows users to browse workouts, view detailed exercise information, add exercises to today's plan, save workouts for later, and track their daily fitness activities.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+-Technology Used
+Next.js
+React
+Tailwind CSS
+DaisyUI
+React Context API
+React Hooks
+React Toastify
+JavaScript (ES6+)
+Fitlog REST API
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+--Key Features
+Workout Library — Browse all workouts in a responsive grid with workout images, muscle groups, equipment, difficulty, duration, calories, and rating.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Sort Workouts — Sort workouts by Duration, Calories, or Rating.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Detailed Workout Pages — View detailed information about each workout, including specifications, description, and step-by-step instructions.
 
-## Learn More
+Today's Plan & Saved Workouts — Add workouts to today's plan or save them for later.
 
-To learn more about Next.js, take a look at the following resources:
+Live Navbar Counters — Plan and Saved counters update automatically when workouts are added or removed.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+My Plan Dashboard — Manage today's workouts and saved workouts from a dedicated dashboard with separate tabs.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Workout Management — Mark workouts as completed or remove them from the plan.
 
-## Deploy on Vercel
+Toast Notifications — Get instant feedback when adding, saving, completing, or removing workouts.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Dynamic Routing — Each workout has its own dynamic route using Next.js App Router.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Loading State — Display a loading UI while workout data is being fetched.
+
+Custom 404 Page — Show a user-friendly 404 page for unknown or invalid routes.
+
+Active Navigation — Highlight the currently active navigation link using usePathname().
+
+Global State Management — Manage and share plan and saved workout data across components using React Context API.
+
+Responsive Design — Fully responsive UI for mobile, tablet, and desktop devices.

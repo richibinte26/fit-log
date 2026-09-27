@@ -54,7 +54,7 @@ const WorkoutDetailsPage = async ({ params }) => {
         />
       </div>
 
-      {/* Right side — details */}
+      {/* Right sideDetails */}
       <div>
         <h1 className="text-white font-bold font-oswald uppercase text-3xl">
           {workout.name}
@@ -126,7 +126,6 @@ const WorkoutDetailsPage = async ({ params }) => {
   );
 };
 
-// Small helper component for one row in the specs table
 const SpecRow = ({ label, value }) => (
   <div className="flex justify-between px-4 py-3">
     <span className="text-neutral-400 text-sm uppercase">
