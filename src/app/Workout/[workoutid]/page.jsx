@@ -30,7 +30,7 @@ const WorkoutDetailsPage = async ({ params }) => {
   const { workoutId } = await params;
 
   const workout = await getWorkoutData(workoutId);
-
+console.log(workout, "workout")
   if (!workout || workout.error) {
     return (
       <div className="min-h-screen flex items-center justify-center">
